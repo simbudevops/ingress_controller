@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: techsolutions-app
+  name:  ingress-controller-deployment
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/KastroVKiran/microservices-ingress-kastro.git
+    repoURL: https://github.com/simbudevops/ingress_controller.git
     targetRevision: HEAD
     path: k8s
   destination:
